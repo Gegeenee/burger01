@@ -6,7 +6,7 @@ const Burger = props => {
 
    
 
-    //{bacon:2, cheese:2, meat:1, salad:1}
+    //{bacon:2, cheese:2, meat:1, salad:1}lhdhs
     console.log(props.orts);
     const items = Object.entries(props.orts);
     console.log(items);
