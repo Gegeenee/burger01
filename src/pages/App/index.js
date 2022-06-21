@@ -3,14 +3,14 @@ import React from "react";
 import css from "./style.module.css";
 
 import Toolbar from "../../components/Toolbar";
-import Burgerbuilder from "../Burgerbuilder";
+import BurgerPage from "../BurgerPage";
 
 function App() {
   return(
   <div>
       <Toolbar />
       <main className={css.Content}>
-        <Burgerbuilder />
+        <BurgerPage />
       </main>
   </div>
   );

@@ -7,9 +7,8 @@ const Burger = props => {
    
 
     //{bacon:2, cheese:2, meat:1, salad:1}lhdhs
-    console.log(props.orts);
     const items = Object.entries(props.orts);
-    console.log(items);
+ 
      
     let content = [];
     items.map(el => {
@@ -17,7 +16,8 @@ const Burger = props => {
             content.push(<BurgerIngredient key={`${el[0]}${i+1}`} type={el[0]} />);
     });
 
-    //content = <p>Хачиртай талхныхаа орцыг сонгоно уу...</p>;
+    if (content.length === 0)
+     content = <p>Хачиртай талхныхаа орцыг сонгоно уу...</p>;
     
     return (
         <div className={css.Burger}>
